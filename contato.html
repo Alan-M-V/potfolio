@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Alan Valadão  </title>
+    <!-- Link para o arquivo CSS externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header com navegação fixa -->
+    <header>
+        <nav>
+            <div class="logo">Portfólio</div>
+            <button class="menu-toggle" id="menuToggle">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Sobre Mim</a></li>
+                <li><a href="formacao.html">Formação</a></li>
+                <li><a href="portfolio.html">Portfólio</a></li>
+                <li><a href="contato.html" class="active">Contato</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle">🌓 Tema</button>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal: Contato -->
+    <main>
+        <section class="content-section">
+            <h1>Contato</h1>
+            <p class="section-intro">Entre em contato comigo através do formulário abaixo ou pelas redes sociais:</p>
+
+            <!-- Informações de Contato -->
+            <div class="contact-info">
+                <div class="contact-card">
+                    <span class="contact-icon">📧</span>
+                    <h3>E-mail</h3>
+                    <p>alanmoraes040@gmail.com</p>
+                </div>
+                <div class="contact-card">
+                    <span class="contact-icon">📱</span>
+                    <h3>Telefone</h3>
+                    <p>(51) 99524-4069</p>
+                </div>
+                <div class="contact-card">
+                    <span class="contact-icon">📍</span>
+                    <h3>Localização</h3>
+                    <p>Capela de Santana, RS - Brasil</p>
+                </div>
+            </div>
+
+            <!-- Formulário de Contato -->
+            <div class="form-container">
+                <h2>Envie uma mensagem</h2>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="nome">Nome Completo *</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo">
+                        <span class="error" id="nomeError">Por favor, preencha seu nome</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mail *</label>
+                        <input type="email" id="email" name="email" placeholder="seu@email.com">
+                        <span class="error" id="emailError">Por favor, insira um e-mail válido</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="assunto">Assunto</label>
+                        <input type="text" id="assunto" name="assunto" placeholder="Assunto da mensagem">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem *</label>
+                        <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem aqui..."></textarea>
+                        <span class="error" id="mensagemError">Por favor, escreva uma mensagem</span>
+                    </div>
+
+                    <button type="submit" class="btn">Enviar Mensagem</button>
+                </form>
+            </div>
+
+            <!-- Redes Sociais -->
+            <div class="social-links">
+                <h2>Conecte-se comigo</h2>
+                <div class="social-grid">
+                    <a href="#" class="social-link" target="_blank">
+                        <span class="social-icon">💼</span>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="#" class="social-link" target="_blank">
+                        <span class="social-icon">💾</span>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="#" class="social-link" target="_blank">
+                        <span class="social-icon">📧</span>
+                        <span>E-mail</span>
+                    </a>
+                    <a href="#" class="social-link" target="_blank">
+                        <span class="social-icon">🐦</span>
+                        <span>Twitter</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal de Confirmação -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <h3>✓ Mensagem Enviada!</h3>
+            <p>Obrigado pelo contato. Responderei em breve!</p>
+            <button class="modal-btn" id="closeModal">Fechar</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 - Alan Valadão. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Link para o arquivo JavaScript externo -->
+    <script src="script.js"></script>
+</body>
+</html>

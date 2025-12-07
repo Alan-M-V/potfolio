@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - [Seu Nome]</title>
+    <!-- Link para o arquivo CSS externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header com navegação fixa -->
+    <header>
+        <nav>
+            <div class="logo">Portfólio</div>
+            <button class="menu-toggle" id="menuToggle">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Sobre Mim</a></li>
+                <li><a href="formacao.html">Formação</a></li>
+                <li><a href="portfolio.html" class="active">Portfólio</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle">🌓 Tema</button>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal: Portfólio -->
+    <main>
+        <section class="content-section">
+            <h1>Portfólio</h1>
+            <p class="section-intro">Aqui estão alguns dos meus projetos mais recentes. Clique em 'Ver Demo' para visualizar uma demonstração dos projetos.</p>
+
+            <div class="portfolio-grid">
+                <!-- Projeto SQL -->
+                <div class="portfolio-item">
+                    <div class="portfolio-img">💾</div>
+                    <div class="portfolio-content">
+                        <h3>Banco de dados</h3>
+                        <p>Modelagem conceitual, CRUD, Análise de dados utilizando MySQL</p>
+                        <div class="project-tags">
+                            <span class="tag">SQL</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">CRUD</span>
+                        </div>
+                        <div class="project-links">
+                            <button class="portfolio-link demo-btn" onclick="abrirImagem('img/projeto1.png', 'modelo conceitual')">Ver Demo →</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projeto de controle por voz -->
+                <div class="portfolio-item">
+                    <div class="portfolio-img">📄</div>
+                    <div class="portfolio-content">
+                        <h3>Controle por Voz</h3>
+                        <p>Análise de Requisitos funcionais e não funcionais, Diagrama UML</p>
+                        <div class="project-tags">
+                            <span class="tag">EdrawMax</span>
+                            <span class="tag">Análise de Requisitos</span>
+                            <span class="tag">Desenvolvimento de Diagramas</span>
+                        </div>
+                        <div class="project-links">
+                            <button class="portfolio-link demo-btn" onclick="abrirImagem('img/projeto2.png', 'Diagrama')">Ver Demo →</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projeto Desenvolvimento de Portfolio -->
+                <div class="portfolio-item">
+                    <div class="portfolio-img">🌐</div>
+                    <div class="portfolio-content">
+                        <h3>Desenvolvimento Web</h3>
+                        <p>Portfolio desenvolvido com HTML5, CSS3 e JavaScript, totalmente responsivo e otimizado para dispositivos móveis, com opção de tema claro e escuro.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <button class="portfolio-link demo-btn" onclick="abrirImagem('img/projeto3.png', 'Desenvolvimento Web')">Ver Demo →</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Seção de Tecnologias -->
+            <div class="technologies-section">
+                <h2>Tecnologias que utilizo</h2>
+                <div class="tech-grid">
+                    <div class="tech-item">
+                        <span class="tech-icon">📄</span>
+                        <p>HTML5</p>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-icon">🎨</span>
+                        <p>CSS3</p>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-icon">⚡</span>
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-icon">🐍</span>
+                        <p>Python</p>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-icon">💾</span>
+                        <p>SQL</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal para exibir imagens -->
+    <div class="image-modal" id="imageModal">
+        <span class="close-modal" onclick="fecharImagem()">&times;</span>
+        <img class="modal-image" id="modalImage" src="" alt="">
+        <div class="image-caption" id="imageCaption"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 - Alan Valadão. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Link para o arquivo JavaScript externo -->
+    <script src="script.js"></script>
+</body>
+</html>
